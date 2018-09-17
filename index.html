@@ -62,9 +62,332 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-第二篇博客" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-HTML结构标记" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/13/第二篇博客/" class="article-date">
+    <a href="/2018/09/17/HTML结构标记/" class="article-date">
+  <time datetime="2018-09-17T09:45:09.752Z" itemprop="datePublished">2018-09-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/17/HTML结构标记/">HTML结构标记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>之前学习的时候，基本都是用div完成的，感觉不是很好，所以把HTML5中的结构标记做一个梳理</p>
+<p>####1.main标签<br> <main>元素呈现了文档或应用的主体部分。主体部分由与文档直接相关，或者扩展于文档的中心主题、应用的主要功能部分的内容组成。这部分内容在文档中应当是独一无二的，不包含任何在一系列文档中重复的内容，比如侧边栏，导航栏链接，版权信息，网站logo，搜索框（除非搜索框作为文档的主要功能）。<br><img src="https://upload-images.jianshu.io/upload_images/7513933-174a3f2fb5803f0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></main></p>
+<p>####2.article标签</p>
+<p><article>元素表示文档、页面、应用或网站中的独立结构，其意在成为可独立分配的或可复用的结构，如在发布中，它可能是论坛帖子、杂志或新闻文章、博客、用户提交的评论、交互式组件，或者其他独立的内容项目。<br>比如，我们写一篇新闻，其里边依然可以包含header，section等….<br><img src="https://upload-images.jianshu.io/upload_images/7513933-63e90eb05690efdc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></article></p>
+<p>####3.section标签</p>
+<p><section>元素标示文档中的一个区域（或节），比如，内容中的一个专题组，一般来所会有包含一个标题。一般通过是否包含一个标题（h1-h6）作为子节点来辨识section。<br><strong>注意</strong><br>１．如果内容要分成几部分，就使用<article><br>２．不要把section作为一个普通的容器使用，这本应该是div的用法。（还是需要慎重点）<br><img src="https://upload-images.jianshu.io/upload_images/7513933-b692d097adf166d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></article></section></p>
+<p>####4.nav标签</p>
+<p><nav>元素描绘一个含有多个超链接的区域，这个区域包含转到其他页面，或者页面内部其他部分的链接列表。注意，这个我们称之为导航条，但是比如<footer>元素就没有必要加入nav的链接列表。<br><img src="https://upload-images.jianshu.io/upload_images/7513933-4f0f13a8044d10e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></footer></nav></p>
+<p>####5.aside标签</p>
+<p><aside> 元素表示一个和其余页面内容几乎无关的部分，被认为是独立于该内容的一部分并且可以被单独的拆分出来而不会使整体受影响。其通常表现为侧边栏或者嵌入内容。<br>![image.png]之前学习的时候，基本都是用div完成的，感觉不是很好，所以把HTML5中的结构标记做一个梳理</aside></p>
+<p>####1.main标签<br> <main>元素呈现了文档或应用的主体部分。主体部分由与文档直接相关，或者扩展于文档的中心主题、应用的主要功能部分的内容组成。这部分内容在文档中应当是独一无二的，不包含任何在一系列文档中重复的内容，比如侧边栏，导航栏链接，版权信息，网站logo，搜索框（除非搜索框作为文档的主要功能）。<br><img src="https://upload-images.jianshu.io/upload_images/7513933-174a3f2fb5803f0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></main></p>
+<p>####2.article标签</p>
+<p><article>元素表示文档、页面、应用或网站中的独立结构，其意在成为可独立分配的或可复用的结构，如在发布中，它可能是论坛帖子、杂志或新闻文章、博客、用户提交的评论、交互式组件，或者其他独立的内容项目。<br>比如，我们写一篇新闻，其里边依然可以包含header，section等….<br><img src="https://upload-images.jianshu.io/upload_images/7513933-63e90eb05690efdc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></article></p>
+<p>####3.section标签</p>
+<p><section>元素标示文档中的一个区域（或节），比如，内容中的一个专题组，一般来所会有包含一个标题。一般通过是否包含一个标题（h1-h6）作为子节点来辨识section。<br><strong>注意</strong><br>１．如果内容要分成几部分，就使用<article><br>２．不要把section作为一个普通的容器使用，这本应该是div的用法。（还是需要慎重点）<br><img src="https://upload-images.jianshu.io/upload_images/7513933-b692d097adf166d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></article></section></p>
+<p>####4.nav标签</p>
+<p><nav>元素描绘一个含有多个超链接的区域，这个区域包含转到其他页面，或者页面内部其他部分的链接列表。注意，这个我们称之为导航条，但是比如<footer>元素就没有必要加入nav的链接列表。<br><img src="https://upload-images.jianshu.io/upload_images/7513933-4f0f13a8044d10e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></footer></nav></p>
+<p>####5.aside标签</p>
+<p><aside> 元素表示一个和其余页面内容几乎无关的部分，被认为是独立于该内容的一部分并且可以被单独的拆分出来而不会使整体受影响。其通常表现为侧边栏或者嵌入内容。<br><img src="https://upload-images.jianshu.io/upload_images/7513933-f1644d596eb39e6b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></aside></p>
+<hr>
+<p>####6.header标签</p>
+<p><header>元素表示一组引导性的帮助，可能包含标题元素，也可以包含其他元素，像logo、分节头部、搜索表单等。就是一个页面的头部信息。<br><img src="https://upload-images.jianshu.io/upload_images/7513933-9629a4e4f34addd3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></header></p>
+<p>####7.footer标签</p>
+<p><footer>元素表示最近一个章节内容或者根节点元素的<strong>页脚</strong>。一个页脚通常包含作者、版权数据、相关链接等信息。注意<footer>元素内的作者信息应包含在<address>元素中。<br><img src="https://upload-images.jianshu.io/upload_images/7513933-f85dff0b31dbc576.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></address></footer></footer></p>
+<p>####8.hgroup标签<br>The HTML <hgroup> element represents a multi-level heading for a section of a document. It groups a set of <h1>–<h6> elements.<br>表示文档的多层次标题，包含h1-h6。就是标题多的时候采用。<br><img src="https://upload-images.jianshu.io/upload_images/7513933-1392dbb34a50ffc3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></h6></h1></hgroup></p>
+<p>####9.address标签<br>用来呈现联系方式、电话、地址、邮箱等内容；<br><img src="https://upload-images.jianshu.io/upload_images/7513933-379b2e9f0248d60f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>(<a href="https://upload-images.jianshu.io/upload_images/7513933-f1644d596eb39e6b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="noopener">https://upload-images.jianshu.io/upload_images/7513933-f1644d596eb39e6b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240</a>)</p>
+<hr>
+<p>####6.header标签</p>
+<p><header>元素表示一组引导性的帮助，可能包含标题元素，也可以包含其他元素，像logo、分节头部、搜索表单等。就是一个页面的头部信息。<br><img src="https://upload-images.jianshu.io/upload_images/7513933-9629a4e4f34addd3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></header></p>
+<p>####7.footer标签</p>
+<p><footer>元素表示最近一个章节内容或者根节点元素的<strong>页脚</strong>。一个页脚通常包含作者、版权数据、相关链接等信息。注意<footer>元素内的作者信息应包含在<address>元素中。<br><img src="https://upload-images.jianshu.io/upload_images/7513933-f85dff0b31dbc576.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></address></footer></footer></p>
+<p>####8.hgroup标签<br>The HTML <hgroup> element represents a multi-level heading for a section of a document. It groups a set of <h1>–<h6> elements.<br>表示文档的多层次标题，包含h1-h6。就是标题多的时候采用。<br><img src="https://upload-images.jianshu.io/upload_images/7513933-1392dbb34a50ffc3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></h6></h1></hgroup></p>
+<p>####9.address标签<br>用来呈现联系方式、电话、地址、邮箱等内容；<br><img src="https://upload-images.jianshu.io/upload_images/7513933-379b2e9f0248d60f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/17/HTML结构标记/" data-id="cjm643ook0001nh9psqvzz5qm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-替换元素与非替换元素" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/17/替换元素与非替换元素/" class="article-date">
+  <time datetime="2018-09-17T09:43:59.700Z" itemprop="datePublished">2018-09-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/17/替换元素与非替换元素/">替换元素与非替换元素</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>以前在自学的过程中，只了解到行内元素以及块级元素。</p>
+<ul>
+<li>行内元素：<br>１．设置宽高无效<br>２．设置margin，左右有效，上下无效；设置padding，上下左右都有效，即会撑大空间<br>３．不能自动换行<br>如：<span></span></li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/7513933-c7e5af0a6ae26c40.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/7513933-3dc2013393513d0e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<ul>
+<li>块级元素：<br>１．能够设置宽高<br>２．margin，paddin上下左右都有效<br>３．可以自动换行<br>４．多个块级元素，从上到下排列</li>
+</ul>
+<p>但是问题来了～<br><strong><img>是行内元素，为什么它可以设置宽高？</strong><br><img src="https://upload-images.jianshu.io/upload_images/7513933-5a77099a3569da8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>我们很明显发现第二幅图的宽高被设置了，到底是怎么回事～<br><img src="https://upload-images.jianshu.io/upload_images/7513933-ec0aa6386be6c9cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><strong>这里，<img>实际上就是所谓的替换元素</strong><br>替换元素在MDN上的解释：CSS 里，<strong>可替换元素（replaced element）</strong>的展现不是由CSS来控制的。这些元素是一类 外观渲染独立于CSS的 外部对象。 典型的可替换元素有 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img" title="HTML Image 元素（ &lt;img&gt; ）代表文档中的一个图像。" target="_blank" rel="noopener"><code>&lt;img&gt;</code></a>、 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/object" title="HTML &lt;object&gt; 元素（或者称作 HTML 嵌入对象元素）表示引入一个外部资源，这个资源可能是一张图片，一个嵌入的浏览上下文，亦或是一个插件所使用的资源。" target="_blank" rel="noopener"><code>&lt;object&gt;</code></a>、 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video" title="HTML &lt;video&gt; 元素 用于在HTML或者XHTML文档中嵌入视频内容。" target="_blank" rel="noopener"><code>&lt;video&gt;</code></a> 和 表单元素，如<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/textarea" title="HTML &lt;textarea&gt; 元素表示一个多行纯文本编辑控件。" target="_blank" rel="noopener"><code>&lt;textarea&gt;</code></a>、 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" title="HTML &lt;input&gt; 元素用于为基于Web的表单创建交互式控件，以便接受来自用户的数据。" target="_blank" rel="noopener"><code>&lt;input&gt;</code></a> 。 某些元素只在一些特殊情况下表现为可替换元素，例如 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio" title="HTML &lt;audio&gt; 元素用于在文档中表示音频内容。 &lt;audio&gt; 元素可以包含多个音频资源， 这些音频资源可以使用 src 属性或者&lt;source&gt; 元素来进行描述； 浏览器将会选择最合适的一个来使用。对于不支持&lt;audio&gt;元素的浏览器，&lt;audio&gt;元素也可以作为浏览器不识别的内容加入到文档中。" target="_blank" rel="noopener"><code>&lt;audio&gt;</code></a> 和 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/canvas" title="&lt;canvas&gt;元素可被用来通过脚本（通常是JavaScript）绘制图形。比如,它可以被用来绘制图形,制作图片集合,甚至用来实现动画效果。你可以(也应该)在元素标签内写入可提供替代的的代码内容，这些内容将会在在旧的、不支持&lt;canvas&gt;元素的浏览器或是禁用了JavaScript的浏览器内渲染并展现。" target="_blank" rel="noopener"><code>&lt;canvas&gt;</code></a> 。 通过 CSS <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/content" title="CSS的 content CSS 属性用于在元素的  ::before 和 ::after 伪元素中插入内容。使用content 属性插入的内容都是匿名的可替换元素。" target="_blank" rel="noopener"><code>content</code></a> 属性来插入的对象 被称作 <strong>匿名可替换元素（*</strong>anonymous replaced elements<strong>*）</strong>。</p>
+<p>CSS在某些情况下会对可替换元素做特殊处理，比如计算外边距和一些auto值。</p>
+<p>需要注意的是，一部分（并非全部）可替换元素，本身具有尺寸和基线（baseline），会被像<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/vertical-align" title="CSS 的属性 vertical-align 用来指定行内元素（inline）或表格单元格（table-cell）元素的垂直对齐方式。" target="_blank" rel="noopener"><code>vertical-align</code></a>之类的一些 CSS 属性用到。</p>
+<p>由于我的CSS水平感人，不太能理解所有的意思，参考了一些博客，就在我所学习到的知识范围内做了一个<strong>理解：可替换元素所显示的内容，需要浏览器根据元素的属性去判断。</strong><br>比如<img>元素，本身并没有什么内容，内容是有属性src决定的；又如<video>是同样的道理；又如<input>，其内容是由type属性确定。</video></p>
+<p>所以，我们刚才的<img>，由于虽然是行内元素，但是也是替换元素，宽高由属性src的内容决定。而<span>作为行内元素，为非替换元素，它是什么，就显示什么，有行内非替换元素的特征。</span></p>
+<hr>
+<p>写完了还有点乱～遇到了，接着写～</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/17/替换元素与非替换元素/" data-id="cjm643oot0006nh9p6z5ni6r9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-HTML概述" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/17/HTML概述/" class="article-date">
+  <time datetime="2018-09-17T09:43:17.917Z" itemprop="datePublished">2018-09-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/17/HTML概述/">HTML概述</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>目录：<br>１．W3C简介<br>２．MDN简介<br>３．HTML所有标签列表（含部分解释）<br>４．空标签<br>５．可替换标签<br>６．其他</p>
+<p>###１．W3C简介<br>W3C（万维网联盟），听名字就是一个机构，details是在web技术领域最具权威和影响力的国际中立性技术标准机构。比如给超文本标记语言（HTML）制定标准。为什么要制定标准呢？因为浏览器有很多，常见的chrome opera firefox safari ie等，要是这几家都自己玩自己的，那么问题就非常多了。所以，W3C制定标准，大家都采用这个标准，世界就简单了许多。</p>
+<p>###２．MDN是什么<br>我们这里说的MDN（Mozilla Developer NetWork. Mozilla Developer Center），指的是MDN Web Docs，看名字就是“MDN 网络文档”，实际上是汇集众多Mozilla基金会产品和<strong>网络技术开发文档</strong>的免费网站。既然是免费＋文档，我们当然可以在MDN多查阅所需要的东西～</p>
+<p>###３．HTML所有标签列表</p>
+<ul>
+<li><!--..-->    定义注释</li>
+<li>&lt;!DOCTYPE&gt;    定义文档类型</li>
+<li><a>　定义超链接</a></li>
+<li><abbr>  定义缩写</abbr></li>
+<li><address>　　定义地址元素</address></li>
+<li><area>　　定义图像映射中的区域</li>
+<li><article>　　定义article</article></li>
+<li><aside>　　定义页面内容之外的内容</aside></li>
+<li><audio>　　定义声音内容</audio></li>
+<li><b>　　定义粗体文本<br>*<base>　　定义页面所有链接的基准URL</b></li>
+<li><bdo> 　　定义文本显示的方向</bdo></li>
+<li><blockquote>　　定义长的引用</blockquote></li>
+<li><body>　　定义body元素</body></li>
+<li>\&lt;br> 　　插入换行符</li>
+<li><button>　　插入按钮</button></li>
+<li><canvas>　　定义图形</canvas></li>
+<li><caption>　　定义表格标题</caption></li>
+<li><cite>　　定义引用</cite></li>
+<li><code>　　定义计算机代码文本</code></li>
+<li><col>    　　定义表格列的属性</li>
+<li><colgroup>　　定义表格列的分组</colgroup></li>
+<li><command>  定义命令按钮</li>
+<li><datalist>　　定义下拉列表</datalist></li>
+<li><dd>　　定义　定义的描述</dd></li>
+<li><del>　　定义删除文本</del></li>
+<li><details>　　定义元素的细节</details></li>
+<li><dfn>　　定义　定义项目</dfn></li>
+<li><div>　　定义文档中的一部分</div></li>
+<li><dl>　　定义　定义列表</dl></li>
+<li><dt>　　定义　定义的项目</dt></li>
+<li><em>　　定义强调文本</em></li>
+<li><embed>　　定义外部交互内容或插件</li>
+<li><fieldset>　　定义fieldset</fieldset></li>
+<li><figcaption>　定义figure元素的标题</figcaption></li>
+<li><figure>　　定义媒介内容的分组以及它们的标题</figure></li>
+<li><footer>　　定义section或page的页脚</footer></li>
+<li><form>　　定义表单</form></li>
+<li><h1>to<h6>　　定义标题１到标题６</h6></h1></li>
+<li><head>　　定义文档的信息</head></li>
+<li><header>　　定义section或page的页眉</header></li>
+<li><hgroup>　　定义有关文档中的section的信息</hgroup></li>
+<li><html> 　　定义html文档</html></li>
+<li><i>　　定义斜体文本</i></li>
+<li><iframe>　　定义行内的子窗口</iframe></li>
+<li><img>　　定义图像</li>
+<li><input>　　定义输入</li>
+<li><ins> 　　定义插入文本<br>*<keygen>　　定义生成密钥</ins></li>
+<li><kdb>　　定义键盘内容</kdb></li>
+<li><lable>　定义表单控件的标注</lable></li>
+<li><legend>　　定义fieldset（自定义字段）的标题</legend></li>
+<li></li><li> 　　定义列表的项目</li>
+<li><link>　　定义资源引用</li>
+<li><map>　　定义图像的映射</map></li>
+<li><mark>　　定义有记号的文本</mark></li>
+<li><menu>　　定义菜单列表</menu></li>
+<li><meta>　　定义元信息</li>
+<li><meter>　　定义预定义范围内的度量</meter></li>
+<li><nav>　　定义导航链接</nav></li>
+<li><noscript>　　定义noscript部分</noscript></li>
+<li><object>　　定义嵌入对象</object></li>
+<li><ol>　　定义有序列表</ol></li>
+<li><optgrounp>　　定义选项组</optgrounp></li>
+<li><option>　　定义下拉列表中的选项</option></li>
+<li><output>　　定义输出的一些类型</output></li>
+<li><p>　　定义段落</p></li>
+<li><param>　　为对象定义参数</li>
+<li><pre>　　定义预格式化文本</pre></li>
+<li><progress>　　定义任何类型的任务进度</progress></li>
+<li><q>  　　定义短的引用</q></li>
+<li><rp>　　定义若浏览器不支持ruby元素显示的内容</rp></li>
+<li><rt>　　定义ruby注释的解释</rt></li>
+<li><ruby>　　定义ruby注释</ruby></li>
+<li><samp>　　定义样本计算机代码</samp></li>
+<li><script>　　定义脚本</li>
+<li><section>　定义section</li>
+<li><select>　　定义可选列表</li>
+<li><small>　　定义小号文本</li>
+<li><source>　　定义媒介源</li>
+<li><span>　　定义文档中的section</li>
+<li><strong>　　定义强调文本</li>
+<li><style>　　定义样式定义</li>
+<li>\&lt;sub>　　定义下标文本</li>
+<li><summary>　　定义details（细节）元素的标题</li>
+<li>\&lt;sup>　　定义上标文本</li>
+</ul>
+<p>###４.空元素<br>一个空元素可能是HTML，SVG，MathML里的一个不可能存在子节点的元素<br><em>MathML元素，是数学标记语言，用来书写数学符号和公示的标记语言，对应的标签是<math>…</math></em><br>在HTML中，通常在一个空元素上使用闭合标签是无效的,</p>
+<pre><code>&lt;input type=&quot;text&quot;&gt;&lt;/input&gt;　闭合标签是无效的HTML
+</code></pre><p>有以下空元素：<area> <base> \<br> <col> <colgroup> <command> <embed> \<hr> <img> <input> <keygen> <link> <meta> <param> <source> <track> <wrb></p>
+<p>###５．可替换元素（很不熟悉，见下一篇博客）</p>
+<p>###６．其他（不太熟悉或者遗忘的）</p>
+<ul>
+<li>制作电子邮件的链接：<a href="mailto:xxx@yyy"></li>
+<li>在新窗口打开链接：<a href="url" target="_blank"></li>
+<li>单元格内容左对齐：<td align="left"></li>
+<li>input的type属性:button\checkbox\file\hidden\image\password\radio\reset\submit\text</li>
+<li>下拉列表：<select> ；文本区：<textarea><br>*<colgroup>标签补充：用于对表格中的列进行组合，以便进行格式化，可以向整个列应用样式。只能在<table>元素之内，而且在任何一个<caption>（说明）元素之后，在<thead> <tbody> <tfoot> <tr>元素之前使用。若要在某列定义不同的属性，使用<col>。示例如下：<br><img src="https://upload-images.jianshu.io/upload_images/7513933-c889b05ff4b775d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>结果如下：</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/7513933-3de618cb9bb59078.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<hr>
+<p>占坑～</p>
+</script></li></ul>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/17/HTML概述/" data-id="cjm643ooe0000nh9pmpqfn36y" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-浅谈HTTP" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/15/浅谈HTTP/" class="article-date">
+  <time datetime="2018-09-15T10:07:49.000Z" itemprop="datePublished">2018-09-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/15/浅谈HTTP/">浅谈HTTP</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###　浅谈HTTP</p>
+<p>目录：<br>１．补充<br>２．HTTP 请求包括哪些部分，如何用Chrome开发者工具查看 HTTP 请求内容<br>３．HTTP 响应包括哪些部分，如何用Chrome开发者工具查看 HTTP 响应内容<br>４．如何使用 curl 命令</p>
+<p>####１．补充<br><strong>关于客户端与服务器：</strong><br>web的内容都是存储在web服务器上，这些服务器存储了数据，如果HTTP客户端发出请求的话，服务器会提供数据。即：客户端向服务器发送HTTP请求，服务器会在HTTP响应中回送所请求的数据。<br><strong>URI URL URN：</strong></p>
+<ul>
+<li>URI：统一资源标识符，可以标示唯一的一个资源。比如，ISBN:9787542637949 ，可以标识出一本书。</li>
+<li>URL：统一资源定位符，可以提供找到该资源的路径。又因为它同样可以唯一的标识出一个资源，所以是URL的子集。<br>*URN：统一资源名。作为特定内容的唯一名称使用，与目前的资源所在地无关。也是URI的子集。</li>
+</ul>
+<p><strong>方法：</strong><br>常见的HTTP方法：<br>GET：获取<br>POST：发送<br>PUT：更新<br>DELETE：删除</p>
+<p>####２．请求<br>请求包含四部分：进行描述的起始行，包含属性的首部行，<strong>回车</strong>，以及可选的，包含数据的主体部分。<br>用chrome进入百度，查看：<br><img src="https://upload-images.jianshu.io/upload_images/7513933-d921d6d9fdd6ffc7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>可以看到第一、第二部分</p>
+<p>使用curl -d来试试POST上去的数据（第四部分数据没有显示）：<br><img src="https://upload-images.jianshu.io/upload_images/7513933-2409454f380acd08.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>不过已经可以看到 content-length 以及 content-type</p>
+<p> ####3．响应<br>响应也包含四部分：进行描述的起始行，包含属性的首部行，<strong>回车</strong>，以及可选的，包含数据的主体部分。<br>用chrome进入百度，查看：<br><img src="https://upload-images.jianshu.io/upload_images/7513933-553446049624ed00.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><strong>同样的</strong>可以用curl -I来查看</p>
+<pre><code>curl -I &quot;https://www.baidu.com&quot;
+</code></pre><p><img src="https://upload-images.jianshu.io/upload_images/7513933-caf1708ccf15a3e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>####curl的使用：<br>现在用到的几种：<br>１．获取页面内容</p>
+<pre><code>curl https://www.baidu.com 
+</code></pre><p>２．显示HTTP头</p>
+<pre><code>curl -I https://www.baidu.com （显示HTTP头）
+curl  -i https://www.baidu.com（显示HTTP头和内容） 
+</code></pre><p>３．将链接保存到文件</p>
+<pre><code>curl https://www.baidu.com  &gt; index.html
+</code></pre><p><img src="https://upload-images.jianshu.io/upload_images/7513933-444507e7124e3652.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>4．使用-d 发送POST请求</p>
+<pre><code>curl -d &quot;1234&quot; &quot;https://www.baidu.com&quot;
+</code></pre><p>5．使用-v显示请求详细信息<br>6．使用-X指定请求方式<br>7．使用-H增加头部信息</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/15/浅谈HTTP/" data-id="cjm643op10007nh9p1e0zices" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-命令行基础" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/13/命令行基础/" class="article-date">
   <time datetime="2018-09-13T10:07:49.000Z" itemprop="datePublished">2018-09-13</time>
 </a>
     
@@ -76,7 +399,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/13/第二篇博客/">第二篇博客</a>
+      <a class="article-title" href="/2018/09/13/命令行基础/">命令行基础</a>
     </h1>
   
 
@@ -84,11 +407,91 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>##命令行基础</p>
+<blockquote>
+<p>命令提示符是在操作系统中，提示进行命令输入的一种工作提示符。在不同的操作系统环境下，命令提示符各不相同。</p>
+</blockquote>
+<p>#####1. ls命令<br>ls命令用于显示指定工作目录下之内容（列出目前工作目录所含之文件及子目录)。</p>
+<p>常用：</p>
+<ul>
+<li>ls -l ：除文件名称外，亦将文件型态、权限、拥有者、文件大小等资讯详细列出</li>
+<li>ls -a：显示所有文件及目录 (ls内定将文件名或目录名称开头为”.”的视为隐藏档，不会列出)</li>
+<li>ls -al：上边两个综合</li>
+</ul>
+<p>#####2. cat命令<br>cat 命令用于连接文件并打印到标准输出设备上。<br>参数：-n/-b等，不一一介绍，以-n为例展示该命令</p>
+<pre><code>➜  demo ls
+1.txt  2.md  3.txt
+</code></pre><p>给 1.txt 中输入5行”这是一个测试“；2.md以及3.txt为空文件；</p>
+<p><strong>将 1.txt 的文档内容加上行号输出到 2.md：</strong></p>
+<pre><code>➜  demo cat -n 1.txt &gt; 2.md
+</code></pre><p>打开 2.md<br><img src="https://upload-images.jianshu.io/upload_images/7513933-c8da5499b7945407.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>将 1.txt和2.md全部加到3.txt中：</p>
+<pre><code>cat 1.txt 2.md &gt;&gt; 3.txt
+</code></pre><p>打开 3.txt<br><img src="https://upload-images.jianshu.io/upload_images/7513933-0036d1988fa9bbb0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>#####3. mv命令<br>Linux mv命令用来为文件或目录改名、或将文件或目录移入其它位置。</p>
+<p><strong>比较明显的意思：</strong><br>mv 是move的缩写，有很移动的意思。第一层意思很容易理解，比如</p>
+<pre><code>mv a b
+</code></pre><p>就是将a目录移入到b目录中<br><strong>如何改名：</strong><br>我们将刚才demo目录下的1.txt 改名为 1.md：</p>
+<pre><code>move 1.txt 1.md
+</code></pre><p><img src="https://upload-images.jianshu.io/upload_images/7513933-a55d917512924240.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>#####4. touch命令<br>Linux touch命令用于修改文件或者目录的时间属性，包括存取时间和更改时间。若文件不存在，系统会建立一个新的文件。<br>参数较多，不一一列举，做一个简单的说明：<br> 输入:</p>
+<pre><code>touch 4.md
+</code></pre><p>查看文档时间：<img src="https://upload-images.jianshu.io/upload_images/7513933-65e76529d0bfd0c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>为体现其可以修改时间的属性，我们采用-d参数：</p>
+<pre><code>touch -d 2010-02-22 18:00 4.md
+</code></pre><p>则文件4.md的时间属性被修改为：<img src="https://upload-images.jianshu.io/upload_images/7513933-9eaf56a9687892fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><strong>如何查看命令是如何使用的：使用explainshell.com</strong><br>示例：<br>输入touch<br><img src="https://upload-images.jianshu.io/upload_images/7513933-1b04f94e3f5ba069.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>会出现详细的用法，可以随时查询～～～</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/13/第二篇博客/" data-id="cjm0ew4hn0002ou9pwp4wohh8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/13/命令行基础/" data-id="cjm643oop0003nh9piijoxrr4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-如何使用git（超级基础版）" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/13/如何使用git（超级基础版）/" class="article-date">
+  <time datetime="2018-09-13T10:07:49.000Z" itemprop="datePublished">2018-09-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/13/如何使用git（超级基础版）/">命令行基础</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###如何使用git（超级基础版）</p>
+<p>####1.只在本地使用<br><strong>记清楚：</strong></p>
+<pre><code>git init
+git add
+git commit 
+</code></pre><p>第一步：在需要初始化的目录下输入命令 ‘git  init’ ，会产生一个仓库 .git ，据说有毒，就不点开看了。<br><img src="https://upload-images.jianshu.io/upload_images/7513933-7f74447aecf54cf7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>这时候：我们可以用 ‘git status -sb’ 看看我们刚才的那些文件<br><img src="https://upload-images.jianshu.io/upload_images/7513933-55051988059f3c8a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>提示的还挺明显的～</p>
+<p>第二步：我们用 ‘git add’ 将文件添加到所谓的暂存区（我也不知道在哪）比如我们将 ‘1.md’ 添加进去<br><img src="https://upload-images.jianshu.io/upload_images/7513933-2e17ef5cb46d370a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>我们发现 1.md 前边由问号变为A，说明干成了。</p>
+<p>第三步：我们就需要将刚才”暂存区“的文件提交到本地仓库！用’ git commit -m ”信息“ ‘，我们将刚才的 1.md提交进去（这一步需要添加注释，省的忘）<br><img src="https://upload-images.jianshu.io/upload_images/7513933-dc58d32b435c8d0d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>会发现，已经提交走了～～～<br><strong>这时候</strong>怎么看变动呢？利用 ’git log‘ 去看就可以<br><img src="https://upload-images.jianshu.io/upload_images/7513933-e48f58abc1f1c633.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>到此，如何在本地使用就说完～～～0.0不过文件变动怎么办，我还没看，也没遇到问题～先挖个坑～</p>
+<p>####2.将本地仓库上传到github</p>
+<p>####3.在github 上创建仓库，下载到本地</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/13/如何使用git（超级基础版）/" data-id="cjm643oor0004nh9pp75mjxcm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -120,11 +523,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>9-11</p>
+<p>前端的学习，断断续续，犹豫不决，已经持续了两年，不如一鼓作气尽快完成，在这里记录学习的过程。</p>
+<p>今天的课堂上明确了几个在学习时候的小目标：</p>
+<ol>
+<li><p>课堂需要记笔记，不然上完课忘的太快；</p>
+</li>
+<li><p>及时的做一些练习demo，巩固学习效果；</p>
+</li>
+<li><p>每天都要学习，一鼓作气，完成课程；</p>
+</li>
+</ol>
+<p>在学习的时候，一定要注意性价比。即什么时候该干什么事情一定要清楚了，不要去挖一些不该去挖的坑；</p>
+<p>在学习的时候，认真完成练习。将每一次练习当作面试题来处理，等，关于学习上的感想，就放在这个文章里，没事就来更新下。</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/13/开博大吉/" data-id="cjm0ew4hk0001ou9ptrr6pcpr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/13/开博大吉/" data-id="cjm643oos0005nh9p61r55oua" class="article-share-link">Share</a>
       
       
     </footer>
@@ -169,7 +585,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/13/hello-world/" data-id="cjm0ew4hd0000ou9pic2fykb3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/13/hello-world/" data-id="cjm643oon0002nh9pbwvjkr5k" class="article-share-link">Share</a>
       
       
     </footer>
@@ -210,15 +626,23 @@
       <ul>
         
           <li>
-            <a href="/2018/09/13/第二篇博客/">第二篇博客</a>
+            <a href="/2018/09/17/HTML结构标记/">HTML结构标记</a>
           </li>
         
           <li>
-            <a href="/2018/09/13/开博大吉/">开博大吉</a>
+            <a href="/2018/09/17/替换元素与非替换元素/">替换元素与非替换元素</a>
           </li>
         
           <li>
-            <a href="/2018/09/13/hello-world/">Hello World</a>
+            <a href="/2018/09/17/HTML概述/">HTML概述</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/15/浅谈HTTP/">浅谈HTTP</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/13/命令行基础/">命令行基础</a>
           </li>
         
       </ul>

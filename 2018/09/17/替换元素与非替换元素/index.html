@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>替换元素与非替换元素 | 一路向西</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="以前在自学的过程中，只了解到行内元素以及块级元素。  行内元素：１．设置宽高无效２．设置margin，左右有效，上下无效；设置padding，上下左右都有效，即会撑大空间３．不能自动换行如：    块级元素：１．能够设置宽高２．margin，paddin上下左右都有效３．可以自动换行４．多个块级元素，从上到下排列  但是问题来了～是行内元素，为什么它可以设置宽高？我们很明显发现第二幅图的宽高被设置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="替换元素与非替换元素">
+<meta property="og:url" content="http://yoursite.com/2018/09/17/替换元素与非替换元素/index.html">
+<meta property="og:site_name" content="一路向西">
+<meta property="og:description" content="以前在自学的过程中，只了解到行内元素以及块级元素。  行内元素：１．设置宽高无效２．设置margin，左右有效，上下无效；设置padding，上下左右都有效，即会撑大空间３．不能自动换行如：    块级元素：１．能够设置宽高２．margin，paddin上下左右都有效３．可以自动换行４．多个块级元素，从上到下排列  但是问题来了～是行内元素，为什么它可以设置宽高？我们很明显发现第二幅图的宽高被设置">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7513933-c7e5af0a6ae26c40.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7513933-3dc2013393513d0e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7513933-5a77099a3569da8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7513933-ec0aa6386be6c9cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-09-17T09:43:59.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="替换元素与非替换元素">
+<meta name="twitter:description" content="以前在自学的过程中，只了解到行内元素以及块级元素。  行内元素：１．设置宽高无效２．设置margin，左右有效，上下无效；设置padding，上下左右都有效，即会撑大空间３．不能自动换行如：    块级元素：１．能够设置宽高２．margin，paddin上下左右都有效３．可以自动换行４．多个块级元素，从上到下排列  但是问题来了～是行内元素，为什么它可以设置宽高？我们很明显发现第二幅图的宽高被设置">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/7513933-c7e5af0a6ae26c40.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  
+    <link rel="alternate" href="/atom.xml" title="一路向西" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">一路向西</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-替换元素与非替换元素" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/17/替换元素与非替换元素/" class="article-date">
+  <time datetime="2018-09-17T09:43:59.700Z" itemprop="datePublished">2018-09-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      替换元素与非替换元素
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>以前在自学的过程中，只了解到行内元素以及块级元素。</p>
+<ul>
+<li>行内元素：<br>１．设置宽高无效<br>２．设置margin，左右有效，上下无效；设置padding，上下左右都有效，即会撑大空间<br>３．不能自动换行<br>如：<span></span></li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/7513933-c7e5af0a6ae26c40.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/7513933-3dc2013393513d0e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<ul>
+<li>块级元素：<br>１．能够设置宽高<br>２．margin，paddin上下左右都有效<br>３．可以自动换行<br>４．多个块级元素，从上到下排列</li>
+</ul>
+<p>但是问题来了～<br><strong><img>是行内元素，为什么它可以设置宽高？</strong><br><img src="https://upload-images.jianshu.io/upload_images/7513933-5a77099a3569da8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>我们很明显发现第二幅图的宽高被设置了，到底是怎么回事～<br><img src="https://upload-images.jianshu.io/upload_images/7513933-ec0aa6386be6c9cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><strong>这里，<img>实际上就是所谓的替换元素</strong><br>替换元素在MDN上的解释：CSS 里，<strong>可替换元素（replaced element）</strong>的展现不是由CSS来控制的。这些元素是一类 外观渲染独立于CSS的 外部对象。 典型的可替换元素有 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img" title="HTML Image 元素（ &lt;img&gt; ）代表文档中的一个图像。" target="_blank" rel="noopener"><code>&lt;img&gt;</code></a>、 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/object" title="HTML &lt;object&gt; 元素（或者称作 HTML 嵌入对象元素）表示引入一个外部资源，这个资源可能是一张图片，一个嵌入的浏览上下文，亦或是一个插件所使用的资源。" target="_blank" rel="noopener"><code>&lt;object&gt;</code></a>、 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video" title="HTML &lt;video&gt; 元素 用于在HTML或者XHTML文档中嵌入视频内容。" target="_blank" rel="noopener"><code>&lt;video&gt;</code></a> 和 表单元素，如<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/textarea" title="HTML &lt;textarea&gt; 元素表示一个多行纯文本编辑控件。" target="_blank" rel="noopener"><code>&lt;textarea&gt;</code></a>、 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" title="HTML &lt;input&gt; 元素用于为基于Web的表单创建交互式控件，以便接受来自用户的数据。" target="_blank" rel="noopener"><code>&lt;input&gt;</code></a> 。 某些元素只在一些特殊情况下表现为可替换元素，例如 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio" title="HTML &lt;audio&gt; 元素用于在文档中表示音频内容。 &lt;audio&gt; 元素可以包含多个音频资源， 这些音频资源可以使用 src 属性或者&lt;source&gt; 元素来进行描述； 浏览器将会选择最合适的一个来使用。对于不支持&lt;audio&gt;元素的浏览器，&lt;audio&gt;元素也可以作为浏览器不识别的内容加入到文档中。" target="_blank" rel="noopener"><code>&lt;audio&gt;</code></a> 和 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/canvas" title="&lt;canvas&gt;元素可被用来通过脚本（通常是JavaScript）绘制图形。比如,它可以被用来绘制图形,制作图片集合,甚至用来实现动画效果。你可以(也应该)在元素标签内写入可提供替代的的代码内容，这些内容将会在在旧的、不支持&lt;canvas&gt;元素的浏览器或是禁用了JavaScript的浏览器内渲染并展现。" target="_blank" rel="noopener"><code>&lt;canvas&gt;</code></a> 。 通过 CSS <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/content" title="CSS的 content CSS 属性用于在元素的  ::before 和 ::after 伪元素中插入内容。使用content 属性插入的内容都是匿名的可替换元素。" target="_blank" rel="noopener"><code>content</code></a> 属性来插入的对象 被称作 <strong>匿名可替换元素（*</strong>anonymous replaced elements<strong>*）</strong>。</p>
+<p>CSS在某些情况下会对可替换元素做特殊处理，比如计算外边距和一些auto值。</p>
+<p>需要注意的是，一部分（并非全部）可替换元素，本身具有尺寸和基线（baseline），会被像<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/vertical-align" title="CSS 的属性 vertical-align 用来指定行内元素（inline）或表格单元格（table-cell）元素的垂直对齐方式。" target="_blank" rel="noopener"><code>vertical-align</code></a>之类的一些 CSS 属性用到。</p>
+<p>由于我的CSS水平感人，不太能理解所有的意思，参考了一些博客，就在我所学习到的知识范围内做了一个<strong>理解：可替换元素所显示的内容，需要浏览器根据元素的属性去判断。</strong><br>比如<img>元素，本身并没有什么内容，内容是有属性src决定的；又如<video>是同样的道理；又如<input>，其内容是由type属性确定。</video></p>
+<p>所以，我们刚才的<img>，由于虽然是行内元素，但是也是替换元素，宽高由属性src的内容决定。而<span>作为行内元素，为非替换元素，它是什么，就显示什么，有行内非替换元素的特征。</span></p>
+<hr>
+<p>写完了还有点乱～遇到了，接着写～</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/17/替换元素与非替换元素/" data-id="cjm643oot0006nh9p6z5ni6r9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/09/17/HTML结构标记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          HTML结构标记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/09/17/HTML概述/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">HTML概述</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/09/17/HTML结构标记/">HTML结构标记</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/17/替换元素与非替换元素/">替换元素与非替换元素</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/17/HTML概述/">HTML概述</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/15/浅谈HTTP/">浅谈HTTP</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/13/命令行基础/">命令行基础</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 滑振<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

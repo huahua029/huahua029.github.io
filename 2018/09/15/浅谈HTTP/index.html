@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>浅谈HTTP | 一路向西</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="###　浅谈HTTP 目录：１．补充２．HTTP 请求包括哪些部分，如何用Chrome开发者工具查看 HTTP 请求内容３．HTTP 响应包括哪些部分，如何用Chrome开发者工具查看 HTTP 响应内容４．如何使用 curl 命令 ####１．补充关于客户端与服务器：web的内容都是存储在web服务器上，这些服务器存储了数据，如果HTTP客户端发出请求的话，服务器会提供数据。即：客户端向服务器发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅谈HTTP">
+<meta property="og:url" content="http://yoursite.com/2018/09/15/浅谈HTTP/index.html">
+<meta property="og:site_name" content="一路向西">
+<meta property="og:description" content="###　浅谈HTTP 目录：１．补充２．HTTP 请求包括哪些部分，如何用Chrome开发者工具查看 HTTP 请求内容３．HTTP 响应包括哪些部分，如何用Chrome开发者工具查看 HTTP 响应内容４．如何使用 curl 命令 ####１．补充关于客户端与服务器：web的内容都是存储在web服务器上，这些服务器存储了数据，如果HTTP客户端发出请求的话，服务器会提供数据。即：客户端向服务器发">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7513933-d921d6d9fdd6ffc7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7513933-2409454f380acd08.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7513933-553446049624ed00.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7513933-caf1708ccf15a3e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7513933-444507e7124e3652.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-09-17T09:42:25.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="浅谈HTTP">
+<meta name="twitter:description" content="###　浅谈HTTP 目录：１．补充２．HTTP 请求包括哪些部分，如何用Chrome开发者工具查看 HTTP 请求内容３．HTTP 响应包括哪些部分，如何用Chrome开发者工具查看 HTTP 响应内容４．如何使用 curl 命令 ####１．补充关于客户端与服务器：web的内容都是存储在web服务器上，这些服务器存储了数据，如果HTTP客户端发出请求的话，服务器会提供数据。即：客户端向服务器发">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/7513933-d921d6d9fdd6ffc7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  
+    <link rel="alternate" href="/atom.xml" title="一路向西" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">一路向西</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-浅谈HTTP" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/15/浅谈HTTP/" class="article-date">
+  <time datetime="2018-09-15T10:07:49.000Z" itemprop="datePublished">2018-09-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      浅谈HTTP
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###　浅谈HTTP</p>
+<p>目录：<br>１．补充<br>２．HTTP 请求包括哪些部分，如何用Chrome开发者工具查看 HTTP 请求内容<br>３．HTTP 响应包括哪些部分，如何用Chrome开发者工具查看 HTTP 响应内容<br>４．如何使用 curl 命令</p>
+<p>####１．补充<br><strong>关于客户端与服务器：</strong><br>web的内容都是存储在web服务器上，这些服务器存储了数据，如果HTTP客户端发出请求的话，服务器会提供数据。即：客户端向服务器发送HTTP请求，服务器会在HTTP响应中回送所请求的数据。<br><strong>URI URL URN：</strong></p>
+<ul>
+<li>URI：统一资源标识符，可以标示唯一的一个资源。比如，ISBN:9787542637949 ，可以标识出一本书。</li>
+<li>URL：统一资源定位符，可以提供找到该资源的路径。又因为它同样可以唯一的标识出一个资源，所以是URL的子集。<br>*URN：统一资源名。作为特定内容的唯一名称使用，与目前的资源所在地无关。也是URI的子集。</li>
+</ul>
+<p><strong>方法：</strong><br>常见的HTTP方法：<br>GET：获取<br>POST：发送<br>PUT：更新<br>DELETE：删除</p>
+<p>####２．请求<br>请求包含四部分：进行描述的起始行，包含属性的首部行，<strong>回车</strong>，以及可选的，包含数据的主体部分。<br>用chrome进入百度，查看：<br><img src="https://upload-images.jianshu.io/upload_images/7513933-d921d6d9fdd6ffc7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>可以看到第一、第二部分</p>
+<p>使用curl -d来试试POST上去的数据（第四部分数据没有显示）：<br><img src="https://upload-images.jianshu.io/upload_images/7513933-2409454f380acd08.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>不过已经可以看到 content-length 以及 content-type</p>
+<p> ####3．响应<br>响应也包含四部分：进行描述的起始行，包含属性的首部行，<strong>回车</strong>，以及可选的，包含数据的主体部分。<br>用chrome进入百度，查看：<br><img src="https://upload-images.jianshu.io/upload_images/7513933-553446049624ed00.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><strong>同样的</strong>可以用curl -I来查看</p>
+<pre><code>curl -I &quot;https://www.baidu.com&quot;
+</code></pre><p><img src="https://upload-images.jianshu.io/upload_images/7513933-caf1708ccf15a3e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>####curl的使用：<br>现在用到的几种：<br>１．获取页面内容</p>
+<pre><code>curl https://www.baidu.com 
+</code></pre><p>２．显示HTTP头</p>
+<pre><code>curl -I https://www.baidu.com （显示HTTP头）
+curl  -i https://www.baidu.com（显示HTTP头和内容） 
+</code></pre><p>３．将链接保存到文件</p>
+<pre><code>curl https://www.baidu.com  &gt; index.html
+</code></pre><p><img src="https://upload-images.jianshu.io/upload_images/7513933-444507e7124e3652.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>4．使用-d 发送POST请求</p>
+<pre><code>curl -d &quot;1234&quot; &quot;https://www.baidu.com&quot;
+</code></pre><p>5．使用-v显示请求详细信息<br>6．使用-X指定请求方式<br>7．使用-H增加头部信息</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/15/浅谈HTTP/" data-id="cjm643op10007nh9p1e0zices" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/09/17/HTML概述/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          HTML概述
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/09/13/命令行基础/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">命令行基础</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/09/17/HTML结构标记/">HTML结构标记</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/17/替换元素与非替换元素/">替换元素与非替换元素</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/17/HTML概述/">HTML概述</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/15/浅谈HTTP/">浅谈HTTP</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/13/命令行基础/">命令行基础</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 滑振<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
